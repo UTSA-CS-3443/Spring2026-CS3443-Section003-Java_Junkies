@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.budgetwise.controller.ReportsController"
+            style="-fx-background-color: #F7F8FC;">
+
+    <center>
+        <VBox spacing="20">
+            <padding>
+                <Insets top="30" right="30" bottom="30" left="30"/>
+            </padding>
+
+            <Label text="Reports"
+                   style="-fx-font-size: 34px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="10">
+                <Label text="Month:"/>
+                <ComboBox fx:id="monthDropdown" prefWidth="180"
+                          onAction="#handleMonthSelection"/>
+            </HBox>
+
+            <HBox spacing="30">
+                <VBox spacing="10">
+                    <Label text="Spending by Category"
+                           style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                    <PieChart fx:id="expensePieChart" prefWidth="380" prefHeight="320"/>
+                </VBox>
+
+                <VBox spacing="10">
+                    <Label text="Income vs Expenses"
+                           style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                    <BarChart fx:id="incomeVsExpenseBarChart" prefWidth="450" prefHeight="320">
+                        <xAxis>
+                            <CategoryAxis label="Type"/>
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis label="Amount"/>
+                        </yAxis>
+                    </BarChart>
+                </VBox>
+            </HBox>
+
+            <Label fx:id="categoryBreakdownLabels"
+                   text="Category breakdown will appear here."
+                   style="-fx-font-size: 16px;"/>
+
+        </VBox>
+    </center>
+</BorderPane>

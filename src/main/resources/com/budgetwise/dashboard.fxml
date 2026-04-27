@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.budgetwise.controller.DashboardController"
+            style="-fx-background-color: #F7F8FC;">
+
+    <center>
+        <VBox spacing="25">
+            <padding>
+                <Insets top="30" right="30" bottom="30" left="30"/>
+            </padding>
+
+            <Label text="Dashboard"
+                   style="-fx-font-size: 34px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="20">
+                <VBox spacing="10" prefWidth="220" prefHeight="120"
+                      style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 12;">
+                    <Label text="Total Income" style="-fx-font-size: 16px;"/>
+                    <Label fx:id="incomeLabel" text="4250"
+                           style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: green;"/>
+                </VBox>
+
+                <VBox spacing="10" prefWidth="220" prefHeight="120"
+                      style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 12;">
+                    <Label text="Total Expenses" style="-fx-font-size: 16px;"/>
+                    <Label fx:id="expensesLabel" text="2180"
+                           style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #B91C1C;"/>
+                </VBox>
+
+                <VBox spacing="10" prefWidth="220" prefHeight="120"
+                      style="-fx-background-color: white; -fx-padding: 20; -fx-background-radius: 12;">
+                    <Label text="Remaining Balance" style="-fx-font-size: 16px;"/>
+                    <Label fx:id="totalRemainingBudget" text="2070"
+                           style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+                </VBox>
+            </HBox>
+
+            <VBox spacing="10">
+                <Label text="Recent Transactions"
+                       style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+                <TableView fx:id="recentTransactionsTable" prefHeight="280">
+                    <columns>
+                        <TableColumn fx:id="dateColumn" text="Date" prefWidth="120"/>
+                        <TableColumn fx:id="typeColumn" text="Type" prefWidth="120"/>
+                        <TableColumn fx:id="categoryColumn" text="Category" prefWidth="150"/>
+                        <TableColumn fx:id="descriptionColumn" text="Description" prefWidth="250"/>
+                        <TableColumn fx:id="amountColumn" text="Amount" prefWidth="120"/>
+                    </columns>
+                </TableView>
+            </VBox>
+
+            <VBox spacing="8">
+                <Label text="Budget Goal Progress"/>
+                <ProgressBar fx:id="budgetGoalProgress" prefWidth="400" progress="0.65"/>
+            </VBox>
+
+        </VBox>
+    </center>
+</BorderPane>

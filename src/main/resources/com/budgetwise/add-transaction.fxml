@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.budgetwise.controller.AddTransactionController"
+            style="-fx-background-color: #F7F8FC;">
+
+    <center>
+        <VBox spacing="25">
+            <padding>
+                <Insets top="30" right="30" bottom="30" left="30"/>
+            </padding>
+
+            <Label text="Add Transaction"
+                   style="-fx-font-size: 34px; -fx-font-weight: bold;"/>
+
+            <GridPane hgap="15" vgap="18">
+
+                <Label text="Type:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <HBox spacing="15" GridPane.rowIndex="0" GridPane.columnIndex="1">
+                    <RadioButton fx:id="incomeRadioButton" text="Income"/>
+                    <RadioButton fx:id="expenseRadioButton" text="Expense"/>
+                </HBox>
+
+                <Label text="Amount:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="amountField"
+                           promptText="Enter amount"
+                           GridPane.rowIndex="1"
+                           GridPane.columnIndex="1"/>
+
+                <Label text="Category:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="categoryDropdown"
+                          prefWidth="250"
+                          GridPane.rowIndex="2"
+                          GridPane.columnIndex="1"/>
+
+                <Label text="Date:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <DatePicker fx:id="datePicker"
+                            prefWidth="250"
+                            GridPane.rowIndex="3"
+                            GridPane.columnIndex="1"/>
+
+                <Label text="Description:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <TextField fx:id="descriptionField"
+                           promptText="Enter description"
+                           GridPane.rowIndex="4"
+                           GridPane.columnIndex="1"/>
+            </GridPane>
+
+            <HBox spacing="20">
+                <Button fx:id="saveButton"
+                        text="Save Transaction"
+                        onAction="#handleSaveTransaction"
+                        style="-fx-background-color: #22C55E; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+                <Button fx:id="cancelButton"
+                        text="Cancel"
+                        onAction="#handleCancel"
+                        style="-fx-background-color: #DC2626; -fx-text-fill: white; -fx-font-weight: bold;"/>
+            </HBox>
+
+            <Label fx:id="messageLabel"
+                   text=""
+                   style="-fx-font-size: 14px;"/>
+
+        </VBox>
+    </center>
+</BorderPane>

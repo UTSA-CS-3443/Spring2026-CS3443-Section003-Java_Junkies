@@ -1,0 +1,31 @@
+Date,Time,Description,Category,Amount,AccountType
+2026-03-01,08:00 AM,Monthly Rent,Housing,-1200.00,Checking
+2026-03-02,09:30 AM,Salary Deposit,Income,2850.00,Checking
+2026-03-03,11:43 AM,Starbucks,Coffee,-6.50,Checking
+2026-03-05,04:15 PM,Amazon Purchase,Shopping,-54.99,Credit
+2026-03-07,11:32 AM,Whole Foods Market,Groceries,-145.20,Checking
+2026-03-10,08:00 PM,Netflix Subscription,Entertainment,-19.99,Credit
+2026-03-12,02:45 PM,City Utilities,Utilities,-210.35,Checking
+2026-03-15,10:15 AM,Freelance Payment,Income,750.00,Savings
+2026-03-18,07:20 AM,Gas Station,Transport,-45.00,Checking
+2026-03-20,07:15 PM,Local Bistro,Dining Out,-32.50,Credit
+2026-03-22,06:00 AM,Gym Membership,Health,-50.00,Checking
+2026-03-24,01:30 PM,Transfer to Savings,Transfer,-200.00,Checking
+2026-03-24,01:31 PM,Transfer from Checking,Transfer,200.00,Savings
+2026-03-25,09:45 PM,Steam Games,Entertainment,-29.99,Credit
+2026-03-26,12:15 PM,Grocery Store,Groceries,-88.10,Checking
+2026-03-27,03:20 PM,Internet Service,Utilities,-75.00,Checking
+2026-03-28,11:00 AM,Phone Bill,Utilities,-60.00,Credit
+2026-03-29,06:30 PM,Movie Theater,Entertainment,-15.00,Checking
+2026-03-30,09:00 AM,Salary Bonus,Income,500.00,Checking
+2026-03-30,05:45 PM,Pet Supplies,Shopping,-42.75,CreditExpense,34.0,Food,2026-04-27,lunch
+Expense,45.0,Utilities,2026-04-27,lunch
+Expense,2300.0,Rent,2026-04-27,rent
+Income,2300.0,Income,2026-04-27,Paycheck
+Income,1000.0,Income,2026-04-27,income
+Income,2000.0,Income,2026-03-10,inccome
+Expense,300.0,Transportation,2026-03-17,Test
+Expense,500.0,Utilities,2026-04-27,test
+Expense,15.0,Food,2026-04-27,breakfast
+Expense,100.0,Food,2026-04-27,Dinner
+Expense,50.0,Food,2026-04-27,Dinner

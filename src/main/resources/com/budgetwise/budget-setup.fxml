@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.budgetwise.controller.BudgetSetupController"
+            style="-fx-background-color: #F7F8FC;">
+
+    <center>
+        <VBox spacing="20">
+            <padding>
+                <Insets top="30" right="30" bottom="30" left="30"/>
+            </padding>
+
+            <Label text="Budget Setup"
+                   style="-fx-font-size: 34px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="10">
+                <Label text="Month:"/>
+                <ComboBox fx:id="monthDropdown" prefWidth="200"/>
+            </HBox>
+
+            <TableView fx:id="categoryTable" prefHeight="400">
+
+                <columns>
+                    <TableColumn fx:id="nameColumn" text="Category" prefWidth="180"/>
+                    <TableColumn fx:id="budgetColumn" text="Budget" prefWidth="150"/>
+                    <TableColumn fx:id="spentColumn" text="Spent" prefWidth="150"/>
+                    <TableColumn fx:id="progressColumn" text="Progress" prefWidth="200"/>
+                </columns>
+
+            </TableView>
+
+            <HBox spacing="15">
+                <Button fx:id="addCategoryButton" text="Add Category"
+                        onAction="#handleAddCategory"/>
+                <Button fx:id="saveBudgetButton" text="Save Budget"
+                        onAction="#handleSaveBudget"/>
+            </HBox>
+
+        </VBox>
+    </center>
+</BorderPane>

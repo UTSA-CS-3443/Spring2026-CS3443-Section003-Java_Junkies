@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.budgetwise.controller.NavigationMenuController"
+            prefWidth="1100" prefHeight="700">
+
+    <left>
+        <VBox spacing="15" prefWidth="220" style="-fx-background-color: #1F2937;">
+            <padding>
+                <Insets top="35" right="20" bottom="30" left="20"/>
+            </padding>
+
+            <Label text="BudgetWise"
+                   style="-fx-text-fill: white; -fx-font-size: 26px; -fx-font-weight: bold;"/>
+
+            <Button text="Dashboard" maxWidth="Infinity" onAction="#handleDashboardButton"/>
+            <Button text="Add Transaction" maxWidth="Infinity" onAction="#handleAddTransactionButton"/>
+            <Button text="Transactions" maxWidth="Infinity" onAction="#handleTransactionsButton"/>
+            <Button text="Budget Setup" maxWidth="Infinity" onAction="#handleBudgetSetupButton"/>
+            <Button text="Reports" maxWidth="Infinity" onAction="#handleReportsButton"/>
+        </VBox>
+    </left>
+
+    <center>
+        <BorderPane fx:id="contentArea" prefWidth="880" prefHeight="700"
+                    style="-fx-background-color: #F7F8FC;"/>
+    </center>
+
+</BorderPane>
