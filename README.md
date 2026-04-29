@@ -18,6 +18,7 @@ Budget Wise is a JavaFX application designed to help users track their personal 
 
 ### Prerequisites
 * [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/) (Version X or higher)
+* An IDE (IntelliJ IDEA, Eclipse, VS Code) Please ensure that it has JavaFX support!
 
 ### Installation & Execution
 
