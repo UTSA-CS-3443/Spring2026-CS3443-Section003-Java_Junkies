@@ -24,3 +24,10 @@ Budget Wise is a JavaFX application designed to help users track their personal 
 1. Clone the repository:
    ```bash
    git clone [https://github.com/yourusername/budget-wise.git](https://github.com/yourusername/budget-wise.git)
+
+## 👥 Collaborators
+
+* Jacob Breedlove
+* Luis Jiminez Lopez
+* David Harris
+* Victor Nyirenda
