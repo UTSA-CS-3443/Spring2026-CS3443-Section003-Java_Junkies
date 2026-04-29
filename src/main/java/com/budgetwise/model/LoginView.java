@@ -1,4 +1,4 @@
-package com.budgetwise;
+package com.budgetwise.model;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
