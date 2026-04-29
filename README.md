@@ -30,6 +30,9 @@ Budget Wise is a JavaFX application designed to help users track their personal 
 2. Run the Application
    * Run Main.java
 
+3. Input User and Password on the Login Screen
+   * **USER:** admin **PASSWORD:** 1234
+
 ## 👥 Collaborators
 
 * Jacob Breedlove
