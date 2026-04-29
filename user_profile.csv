@@ -1,2 +1,2 @@
-Username,AccountCreationDate,LastLogin,PreferredTheme,PrimaryCurrency,NotificationEnabled
-User_99,2025-01-15,2026-03-30,Dark,USD,True
+Username,Password,AccountCreationDate,LastLogin,PreferredTheme,PrimaryCurrency,NotificationEnabled
+User_99,mypassword123,2025-01-15,2026-03-30,Dark,USD,True
